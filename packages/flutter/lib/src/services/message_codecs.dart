@@ -650,7 +650,7 @@ class StandardMethodCodec implements MethodCodec {
     if (errorCode is String &&
         (errorMessage == null || errorMessage is String) &&
         !buffer.hasRemaining) {
-      throw PlatformException(
+throw PlatformException(
         code: errorCode,
         message: errorMessage as String?,
         details: errorDetails,
